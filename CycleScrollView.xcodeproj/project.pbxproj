@@ -14,6 +14,8 @@
 		FB7C41641C19B5C600A804A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7C41621C19B5C600A804A9 /* LaunchScreen.storyboard */; };
 		FB7C416F1C19B5C600A804A9 /* CycleScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C416E1C19B5C600A804A9 /* CycleScrollViewTests.swift */; };
 		FB7C417A1C19B5C600A804A9 /* CycleScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C41791C19B5C600A804A9 /* CycleScrollViewUITests.swift */; };
+		FB7C41881C19B5E600A804A9 /* CycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C41871C19B5E600A804A9 /* CycleScrollView.swift */; };
+		FB7C418A1C19C27900A804A9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C41891C19C27900A804A9 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FB7C41751C19B5C600A804A9 /* CycleScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CycleScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7C41791C19B5C600A804A9 /* CycleScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleScrollViewUITests.swift; sourceTree = "<group>"; };
 		FB7C417B1C19B5C600A804A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7C41871C19B5E600A804A9 /* CycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleScrollView.swift; sourceTree = "<group>"; };
+		FB7C41891C19C27900A804A9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		FB7C41581C19B5C600A804A9 /* CycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				FB7C41891C19C27900A804A9 /* UIView+Extension.swift */,
 				FB7C41591C19B5C600A804A9 /* AppDelegate.swift */,
 				FB7C415B1C19B5C600A804A9 /* ViewController.swift */,
+				FB7C41871C19B5E600A804A9 /* CycleScrollView.swift */,
 				FB7C415D1C19B5C600A804A9 /* Main.storyboard */,
 				FB7C41601C19B5C600A804A9 /* Assets.xcassets */,
 				FB7C41621C19B5C600A804A9 /* LaunchScreen.storyboard */,
@@ -258,6 +264,8 @@
 			files = (
 				FB7C415C1C19B5C600A804A9 /* ViewController.swift in Sources */,
 				FB7C415A1C19B5C600A804A9 /* AppDelegate.swift in Sources */,
+				FB7C418A1C19C27900A804A9 /* UIView+Extension.swift in Sources */,
+				FB7C41881C19B5E600A804A9 /* CycleScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CycleScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cisc.com.CycleScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CycleScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cisc.com.CycleScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +494,7 @@
 				FB7C41801C19B5C600A804A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB7C41811C19B5C600A804A9 /* Build configuration list for PBXNativeTarget "CycleScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +503,7 @@
 				FB7C41831C19B5C600A804A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB7C41841C19B5C600A804A9 /* Build configuration list for PBXNativeTarget "CycleScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +512,7 @@
 				FB7C41861C19B5C600A804A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
